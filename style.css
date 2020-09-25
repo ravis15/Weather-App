@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1em;
+  background-color: #ec9a29;
+  color: white;
+  border-radius: 13px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  font-size: 1.3em;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #008b8b;
+  border: none;
+  outline: none;
+  border-radius: 13px;
+  padding: 0.25em 0.8em;
+  transition: transform 250ms ease-in-out, opacity 250ms linear,
+    color 250ms ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  color: black;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+}
+
+#search-bar {
+  font-size: 1.3em;
+  font-weight: 300;
+  width: 90%;
+  border: 2px solid darkcyan;
+  border-radius: 13px;
+  padding: 0.5em;
+  outline: none;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+strong {
+  color: darkcyan;
+}
+
+#city {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+#temperature {
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+#day-type,
+#min-max {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+#cloudy {
+  background-image: url("/img/cloudy.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#sunny {
+  background-image: url("/img/sunny.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#rainy {
+  background-image: url("/img/rainy.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#haze {
+  background-image: url("/img/haze.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#mist {
+  background-image: url("/img/mist.jpg");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#smoke {
+  background-image: url("/img/smoke.jpg");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
